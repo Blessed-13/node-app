@@ -1,0 +1,19 @@
+{
+  "name": "my-node-app",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "npx standard",
+    "build": "mkdir -p dist && echo 'build complete' > dist/index.html"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "standard": "^17.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "standard": {
+  "env": ["jest", "node"]
+  }
+}
